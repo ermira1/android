@@ -16,14 +16,25 @@
         android:padding="@dimen/padding_5dp"
         android:textColor="#FFFFFF" 
         android:textSize="12sp"
+        android:layout_weight="3"
         android:text="@string/add_city"/>
+        <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addNewCity"
+        android:textColor="#FFFFFF"
+        android:background="#000066"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:text="@string/save_data" />
     </TableRow>
 
  <TableRow
         android:id="@+id/tableRow2"
         android:layout_width="match_parent"
-        android:layout_height="25sp" 
-        android:layout_marginTop="0dp"
+        android:layout_height="40sp" 
+        android:layout_marginTop="3dp"
         
         android:layout_below="@+id/tableRow1">
     <TextView
@@ -32,14 +43,14 @@
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/padding_5dp"
         android:layout_weight="1"
-        android:textSize="12sp"
+        android:textSize="15sp"
         android:text="@string/city_name" />
 
     <EditText
         android:id="@+id/cityName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:ems="10"
         android:inputType="text"
         android:paddingRight="@dimen/padding_5dp" >
@@ -51,14 +62,14 @@
 <TableRow
         android:id="@+id/tableRow3"
         android:layout_width="match_parent"
-        android:layout_height="25sp" 
+        android:layout_height="40sp" 
         android:layout_below="@+id/tableRow2">
     <TextView
         android:id="@+id/textView3"
         android:paddingLeft="@dimen/padding_5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="12sp"
+        android:textSize="15sp"
        android:layout_weight="1"
         android:text="@string/country_name" />
 
@@ -67,7 +78,7 @@
         android:layout_width="wrap_content"
         android:paddingRight="@dimen/padding_5dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:ems="10"
         android:inputType="text" >
 
@@ -79,13 +90,13 @@
 <TableRow
         android:id="@+id/tableRow4"
         android:layout_width="match_parent"
-        android:layout_height="25sp" 
+        android:layout_height="40sp" 
         android:layout_below="@+id/tableRow3">
     <TextView
         android:id="@+id/textView4"
         android:paddingLeft="@dimen/padding_5dp"
         android:layout_width="wrap_content"
-        android:textSize="12sp"
+        android:textSize="15sp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/population" />
@@ -94,7 +105,7 @@
     android:id="@+id/populationNumber"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_weight="1"
+    android:layout_weight="2"
     android:paddingRight="@dimen/padding_5dp"
     android:ems="10"
     android:inputType="text" >
@@ -106,7 +117,7 @@
 <TableRow
         android:id="@+id/tableRow5"
         android:layout_width="match_parent"
-        android:layout_height="25sp"
+        android:layout_height="40sp"
         android:layout_below="@+id/tableRow4" >
 
      
@@ -116,14 +127,14 @@
         android:paddingLeft="@dimen/padding_5dp"
         android:layout_height="wrap_content"
             android:layout_weight="1"
-        android:textSize="12sp"
+        android:textSize="15sp"
         android:text="@string/traditions" />
     
     <EditText
     android:id="@+id/traditions"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_weight="1"
+    android:layout_weight="2"
     android:paddingRight="@dimen/padding_5dp"
     android:ems="10"
     android:inputType="text" >
@@ -136,14 +147,14 @@
 <TableRow
         android:id="@+id/tableRow6"
         android:layout_width="match_parent"
-        android:layout_height="25sp"
+        android:layout_height="40sp"
         android:layout_below="@+id/tableRow5" >
      <TextView
           android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/padding_5dp"
-        android:textSize="12sp"
+        android:textSize="15sp"
     android:layout_weight="1"
 
        
@@ -153,7 +164,7 @@
     android:id="@+id/impressions"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_weight="1"
+    android:layout_weight="2"
 android:paddingRight="@dimen/padding_5dp"
     android:ems="10"
     android:inputType="text" >
@@ -165,7 +176,7 @@ android:paddingRight="@dimen/padding_5dp"
 <TableRow
         android:id="@+id/tableRow7"
         android:layout_width="match_parent"
-        android:layout_height="25sp" 
+        android:layout_height="40sp" 
         android:layout_below="@+id/tableRow6">
     
     <TextView
@@ -174,13 +185,13 @@ android:paddingRight="@dimen/padding_5dp"
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/padding_5dp"
             android:layout_weight="1"
-        android:textSize="12sp"
+        android:textSize="15sp"
         android:text="@string/url_image" />
     <EditText
         android:id="@+id/urlImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
         android:paddingRight="@dimen/padding_5dp"
         android:ems="10"
         android:inputType="text|textLongMessage"   >
@@ -188,24 +199,7 @@ android:paddingRight="@dimen/padding_5dp"
     </EditText>
     </TableRow>
 
-<TableRow
-        android:id="@+id/tableRow8"
-        android:layout_width="match_parent"
-        android:layout_height="35sp" 
-        android:layout_below="@+id/tableRow7">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="addNewCity"
-        android:textColor="#FFFFFF"
-        android:background="#0000CC"
-        android:layout_marginTop="15dp"
-        android:layout_weight="1"
-        android:textSize="12sp"
-        android:text="@string/save_data" />
-    </TableRow>
 
 </RelativeLayout>
 
