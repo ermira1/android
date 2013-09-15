@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    
+    tools:context=".MainActivity" >
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/tableRow1">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showVenice"
+        android:textColor="#FFFFFF"
+        android:background="#000033"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:textSize="20sp" 
+        
+        android:text="@string/view_city" />
+    </TableRow>
+    
+      <TableRow
+	    android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp" 
+	    android:layout_below="@+id/tableRow3">
+
+          <ListView
+              android:id="@android:id/list"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1" >
+          </ListView>
+
+     </TableRow>
+
+    
+
+<TableRow
+    android:id="@+id/tableRow1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0000CC" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF" 
+        android:text="@string/city_text_view"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000099"
+        android:onClick="showAddCity"
+        android:text="@string/add_button"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+        <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000066"
+        android:onClick="showMap"
+        android:text="@string/google_button"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+</TableRow>
+
+</RelativeLayout>

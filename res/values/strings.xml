@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cities to remember</string>
+    <string name="action_settings">Settings</string>
+    <string name="city_text_view">Cities</string>
+    <string name="add_button">ADD</string>
+    <string name="add_city">Add a new city</string>
+    <string name="city_name">City                  :</string>
+    <string name="country_name">Country           :</string>
+    <string name="population">Nature      :</string>
+    <string name="traditions">Culture       :</string>
+    <string name="impressions">Economy   :</string>
+    <string name="url_image">URL-image      :</string>
+    <string name="edit_button"> EDIT </string>
+    <string name="save_data">SAVE</string>
+    <string name="view_button">IMAGE</string>
+    <string name="delete_button">DELETE</string>
+    <string name="edit_city">Edit city</string>
+    <string name="google_button">MAP</string>
+    <string name="view_city">View the most beautiful city</string>
+    <string name="venice">VENICE</string>
+</resources>
